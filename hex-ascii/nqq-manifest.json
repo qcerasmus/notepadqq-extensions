@@ -1,0 +1,9 @@
+{
+  "name": "Hex2Ascii",
+  "unique_name": "com.lintwurm.hex2ascii",
+  "author": "lintwurm",
+  "version": "0.0.1",
+  "description": "Hex to Ascii converter",
+  "runtime": "nodejs",
+  "main": "main.js"
+}

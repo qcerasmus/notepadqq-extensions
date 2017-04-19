@@ -54,7 +54,6 @@ function beautifyXML(xml) {
 
 var NotepadqqApi = require("notepadqq-api").NotepadqqApi;
 NotepadqqApi.connect(function(api) {
-	console.log("Version " + api.notepadqq.version());
 	api.onWindowInitialization(function(window) {
 		
 		var menuitemjson = window.addExtensionMenuItem(api.extensionId, "beautify JSON");
@@ -63,6 +62,8 @@ NotepadqqApi.connect(function(api) {
 			var obj = JSON.parse(selectedtext);
 			var str = JSON.stringify(obj, null, "\t");
 			window.currentEditor().setSelectionsText([str]);
+			window.currentEditor().setLanguage("json");
+			
 		});
 		
 		var menuitemxml = window.addExtensionMenuItem(api.extensionId, "beautify XML");
@@ -70,6 +71,7 @@ NotepadqqApi.connect(function(api) {
 			var selectedtext = window.currentEditor().selectedTexts();
 			var formatted = beautifyXML(selectedtext);
 			window.currentEditor().setSelectionsText([formatted]);
+			window.currentEditor().setLanguage("xml");
 		});
    	});
 });

@@ -16,7 +16,6 @@ function hexa_to_ascii(hexx) {
 
 var NotepadqqApi = require("notepadqq-api").NotepadqqApi;
 NotepadqqApi.connect(function(api) {
-	console.log("Version " + api.notepadqq.version());
 	api.onWindowInitialization(function(window) {
 		var menu2hex = window.addExtensionMenuItem(api.extensionId, "convert to hex");
 		menu2hex.on("triggered", function() {

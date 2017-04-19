@@ -1,0 +1,8 @@
+{
+  "name": "Beautifier",
+  "version": "0.0.1",
+  "dependencies": {
+    "notepadqq-api": "^0.9.5"
+  },
+  "private": true
+}

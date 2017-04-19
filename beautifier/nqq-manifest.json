@@ -1,0 +1,9 @@
+{
+  "name": "Beautifier",
+  "unique_name": "com.lintwurm.beautifier",
+  "author": "lintwurm",
+  "version": "0.0.1",
+  "description": "Beautifies JSon files",
+  "runtime": "nodejs",
+  "main": "main.js"
+}

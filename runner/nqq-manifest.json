@@ -1,9 +1,0 @@
-{
-  "name": "Runner",
-  "unique_name": "com.lintwurm.runner",
-  "author": "lintwurm",
-  "version": "0.0.1",
-  "description": "Run files like python scripts, browsers etc",
-  "runtime": "nodejs",
-  "main": "main.js"
-}

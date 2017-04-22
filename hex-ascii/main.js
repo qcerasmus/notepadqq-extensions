@@ -1,9 +1,11 @@
 function ascii_to_hexa(str, currentEditor) {
 	str = str.toString();
+	var hexStr = '';
 	for (var n = 0, l = str.length; n < l; n++) {
 		var hex = Number(str.charCodeAt(n)).toString(16);
-		currentEditor.setSelectionsText([hex]);
+		hexStr += hex;
 	}
+	currentEditor.setSelectionsText([hexStr]);
 }
 
 function hexa_to_ascii(hexx) {

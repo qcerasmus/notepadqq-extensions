@@ -3,7 +3,9 @@ Extensions for the Notepadqq project found at: http://notepadqq.altervista.org/s
 If you can not see the extensions tab in the toolbar, open ~/.config/Notepadqq/Notepadqq.ini and add:
 
 [Extensions]
+
 RuntimeNodeJS=/usr/bin/nodejs
+
 RuntimeNpm=/usr/bin/npm
 
 # dependencies
